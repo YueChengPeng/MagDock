@@ -42,6 +42,8 @@ The display device is built around the Raspberry Pi. It runs a Python program an
 ![display_device](./img/display_sch.jpeg)
 
 ## Communication between Devices
-The ESP32C3 and ESP32S3 both support BLE and WiFi communication. Considering the energy consumption, BLE is obviously a better solution. I intend to build BLE communication between both the backend (Python program) and the frontend (P5.js, using Web BLE). This is basically connect a BLE server to two clients. The Web BLE uses data to draw plots using P5.js, and the Python uses data to drive motor accordingly.
+The ESP32C3 and ESP32S3 both support BLE and WiFi communication. Considering the energy consumption, BLE is obviously a better solution.
+- Option 1: build BLE communication between both the backend (Python program) and the frontend (P5.js, using Web BLE). This is basically connect a BLE server to two clients. The Web BLE uses data to draw plots using P5.js, and the Python uses data to drive motor accordingly. The data is processed on ESP32 device.
+- Option 2: build BLE communication only between the sensing device and the back-end Python script. Raw data is send, and Python process the raw data into movement data. The communication between the frond-end and back-end is established by building a Python Flask server, and P5.js send GET request to the server to get data updates.
 
-![communication](./img/communication.jpeg)
+![communication](./img/communication.png)
