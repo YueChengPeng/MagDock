@@ -37,7 +37,7 @@ For the microcontroller, I plan to build Bluetooth communication between the sen
 - 1 * button
 
 ### Explanation
-The display device is built around the Raspberry Pi. It runs a Python program and a P5.js program. The Python reads inputs from a button (capture screenshot) and controls the x27 stepper motor via the TB6612 breakout board (with H-bridge). A 7 inch LCD display is plugged to the Raspberry Pi using HDMI cable to show the canvas of the P5.js.
+The display device is built around the Raspberry Pi. It runs a Python program and a P5.js program. The Python reads inputs from a button (capture screenshot) and controls the x27 stepper motor via the TB6612 breakout board (with H-bridge). The needle of the motor indicates the current stroke width of the brush. A 7 inch LCD display is plugged to the Raspberry Pi using HDMI cable to show the canvas of the P5.js. An LED is used to indicate if there are changes since the last screenshot.
 
 ![display_device](./img/display_sch.jpeg)
 
@@ -47,3 +47,6 @@ The ESP32C3 and ESP32S3 both support BLE and WiFi communication. Considering the
 - Option 2: build BLE communication only between the sensing device and the back-end Python script. Raw data is send, and Python process the raw data into movement data. The communication between the frond-end and back-end is established by building a Python Flask server, and P5.js send GET request to the server to get data updates.
 
 ![communication](./img/communication.png)
+
+## Schematic diagram of the system
+![schematic](./img/schematic.png)
