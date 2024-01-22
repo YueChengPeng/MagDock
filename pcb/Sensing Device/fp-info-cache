@@ -1,4 +1,4 @@
-22459329606907570
+22464446343253201
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -1623,6 +1623,13 @@ Push Button
 0
 4
 4
+Button_Switch_THT
+SWITCH_THT_SPDT_11MA1QS1
+
+OS102011MA1QS1 
+0
+5
+5
 Button_Switch_THT
 SW_CW_GPTS203211B
 SPST Off-On Pushbutton, 1A, 30V, CW Industries P/N GPTS203211B, http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf
@@ -48125,6 +48132,13 @@ four-pin M8
 6
 5
 Connector_USB
+2171750001_MOL
+
+2171750001 
+0
+6
+6
+Connector_USB
 USB3_A_Molex_48393-001
 USB 3.0, type A, right angle, http://www.molex.com/pdm_docs/sd/483930003_sd.pdf
 USB 3.0 type A right angle
@@ -85245,6 +85259,13 @@ rotary encoder
 0
 7
 6
+Screw_connector
+40mm_rectangle_M3
+
+
+0
+4
+4
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf
