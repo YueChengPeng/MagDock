@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Display Device")(type "KiCad")(uri "/Users/pengyuecheng/Documents/UW/TECHIN 514/final/github/pcb/Display Device.pretty")(options "")(descr ""))
+  (lib (name "motor")(type "KiCad")(uri "/Users/pengyuecheng/Documents/UW/TECHIN 514/final/github/pcb/Display Device/motor.pretty")(options "")(descr ""))
+)

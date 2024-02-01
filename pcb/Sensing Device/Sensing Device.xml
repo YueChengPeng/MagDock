@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/pengyuecheng/Documents/UW/TECHIN 514/final/github/pcb/Sensing Device/Sensing Device.kicad_sch</source>
+    <date>Saturday, January 27, 2024 at 09:39:43 PM</date>
+    <tool>Eeschema 7.0.9</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Sensing Device.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BT1">
+      <value>Lipo battery</value>
+      <footprint>Connector_JST:JST_ZE_SM02B-ZESS-TB_1x02-1MP_P1.50mm_Horizontal</footprint>
+      <libsource lib="Device" part="Battery_Cell" description="Single-cell battery"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <property name="ki_description" value="Single-cell battery"/>
+      <property name="ki_keywords" value="battery cell"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a2ff53a3-67d0-4610-a7e2-eb4d73429e3e</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>100 nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>46b61608-f14c-4d9f-bdf4-dce17375aade</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>100 nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>957e45a3-54c3-4b77-ba65-93efb9f02deb</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100 nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e89e6c48-83ea-4ca0-b07e-4095e58c5afb</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D4.0mm</footprint>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>18428d24-6078-4c94-b3c5-ec2b72a0d46e</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>PWR_PAD</value>
+      <footprint>Connector_JST:JST_NV_B02P-NV_1x02_P5.00mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>39de5e84-502c-4816-bf69-50f8b50ce9fc</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>ID_PAD</value>
+      <footprint>Screw_connector:40mm_rectangle_M3</footprint>
+      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>de4323dc-a9a6-4ec2-b056-7da1531575fe</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>4.7kΩ</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b7e398dd-5a1d-4e31-9856-3e782c40be69</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>470Ω</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d47347b0-95d5-4bb5-bf06-602f888a45f0</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>4.7kΩ</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>be4b9e3e-c04b-436c-86c6-800db37716fc</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>1.2kΩ</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7d5db20d-60bc-4c33-9990-0b29a724001e</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>100Ω</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e572dc79-9b7f-4aca-a004-4d4e867cccf7</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>1.2kΩ</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ee31e612-4a93-47f2-8bac-c3cf91ac8620</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>100Ω</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7e970856-a197-49b5-afb2-fd4395bc6840</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>100Ω</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5a2f95f4-1258-4978-8b99-838501002df9</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_SPST</value>
+      <footprint>Button_Switch_THT:SW_PUSH-12mm</footprint>
+      <libsource lib="Switch" part="SW_SPST" description="Single Pole Single Throw (SPST) switch"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <property name="ki_description" value="Single Pole Single Throw (SPST) switch"/>
+      <property name="ki_keywords" value="switch lever"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9cbc6f13-aed9-4857-b011-b39b11aa2c7c</tstamps>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_SPDT</value>
+      <footprint>Button_Switch_THT:SWITCH_THT_SPDT_11MA1QS1</footprint>
+      <libsource lib="Switch" part="SW_SPDT" description="Switch, single pole double throw"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <property name="ki_description" value="Switch, single pole double throw"/>
+      <property name="ki_keywords" value="switch single-pole double-throw spdt ON-ON"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f77877b2-c2fb-4d27-907d-668c7a473745</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>~</value>
+      <footprint>XIAO ESP32 THT:XIAO_ESP32_SENSE</footprint>
+      <libsource lib="XIAO" part="XIAO_ESP32_SENSE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a75e9e48-b5b1-44a1-8799-bf67476d0019</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>TLV493D</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <datasheet>http://www.infineon.com/dgdl/Infineon-TLV493D-A1B6-DS-v01_00-EN.pdf?fileId=5546d462525dbac40152a6b85c760e80</datasheet>
+      <libsource lib="Sensor_Magnetic" part="TLV493D" description="Low power 3D magnetic sensor, I2C interface, SOT-23-6"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Sensing Device.kicad_sch"/>
+      <property name="ki_description" value="Low power 3D magnetic sensor, I2C interface, SOT-23-6"/>
+      <property name="ki_keywords" value="magnetic field i2c"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eff338e9-4277-43b6-965f-77dc849d1a71</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x02_Pin">
+      <description>Generic connector, single row, 01x02, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Battery_Cell">
+      <description>Single-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery_Cell</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sensor_Magnetic" part="TLV493D">
+      <description>Low power 3D magnetic sensor, I2C interface, SOT-23-6</description>
+      <docs>http://www.infineon.com/dgdl/Infineon-TLV493D-A1B6-DS-v01_00-EN.pdf?fileId=5546d462525dbac40152a6b85c760e80</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV493D</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">http://www.infineon.com/dgdl/Infineon-TLV493D-A1B6-DS-v01_00-EN.pdf?fileId=5546d462525dbac40152a6b85c760e80</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SCL/INT" type="bidirectional"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="SDA/ADDR" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPDT">
+      <description>Switch, single pole double throw</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPDT</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPST">
+      <description>Single Pole Single Throw (SPST) switch</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPST</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="XIAO" part="XIAO_ESP32_SENSE">
+      <fields>
+        <field name="Reference">U</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GPIO1_A0_D0" type="bidirectional"/>
+        <pin num="2" name="GPIO2_A1_D1" type="bidirectional"/>
+        <pin num="3" name="GPIO3_A2_D2" type="bidirectional"/>
+        <pin num="4" name="GPIO4_A3_D3" type="bidirectional"/>
+        <pin num="5" name="GPIO4_A3_D3_SDA" type="bidirectional"/>
+        <pin num="6" name="GPIO6_A5_D5_SCL" type="bidirectional"/>
+        <pin num="7" name="GPIO43_TX_D6" type="bidirectional"/>
+        <pin num="8" name="5V" type="bidirectional"/>
+        <pin num="9" name="GND" type="bidirectional"/>
+        <pin num="10" name="3V3" type="bidirectional"/>
+        <pin num="11" name="GPIO9_A10_D10_COPI" type="bidirectional"/>
+        <pin num="12" name="GPIO8_A9_D9_CIPO" type="bidirectional"/>
+        <pin num="13" name="GPIO7_A8_D8_SCK" type="bidirectional"/>
+        <pin num="14" name="GPIO44_D7_RX" type="bidirectional"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Sensor_Magnetic">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Sensor_Magnetic.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Switch.kicad_sym</uri>
+    </library>
+    <library logical="XIAO">
+      <uri>/Users/pengyuecheng/Documents/KiCad/7.0/symbols/MOUDLE-SEEEDUINO-XIAO-ESP32C3.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/3V3">
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="3V3" pintype="bidirectional"/>
+    </net>
+    <net code="2" name="/Button">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="GPIO1_A0_D0" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="/Id">
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="GPIO7_A8_D8_SCK" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="/SCL_TLV">
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="SCL/INT" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="/SCL_XIAO">
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="GPIO6_A5_D5_SCL" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/SDA_TLV">
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="SDA/ADDR" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/SDA_XIAO">
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="GPIO4_A3_D3_SDA" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="GND">
+      <node ref="BT1" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="GND" pintype="bidirectional"/>
+      <node ref="U2" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="5" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="9" name="Net-(BT1-+)">
+      <node ref="BT1" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="B" pintype="passive"/>
+    </net>
+    <net code="10" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+    </net>
+    <net code="11" name="Net-(D1-K)">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="12" name="VCC">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="VDD" pintype="power_in"/>
+    </net>
+    <net code="13" name="unconnected-(SW2-C-Pad3)">
+      <node ref="SW2" pin="3" pinfunction="C" pintype="passive+no_connect"/>
+    </net>
+    <net code="14" name="unconnected-(U1-5V-Pad8)">
+      <node ref="U1" pin="8" pinfunction="5V" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="15" name="unconnected-(U1-GPIO2_A1_D1-Pad2)">
+      <node ref="U1" pin="2" pinfunction="GPIO2_A1_D1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="16" name="unconnected-(U1-GPIO3_A2_D2-Pad3)">
+      <node ref="U1" pin="3" pinfunction="GPIO3_A2_D2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="17" name="unconnected-(U1-GPIO4_A3_D3-Pad4)">
+      <node ref="U1" pin="4" pinfunction="GPIO4_A3_D3" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="18" name="unconnected-(U1-GPIO8_A9_D9_CIPO-Pad12)">
+      <node ref="U1" pin="12" pinfunction="GPIO8_A9_D9_CIPO" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="19" name="unconnected-(U1-GPIO9_A10_D10_COPI-Pad11)">
+      <node ref="U1" pin="11" pinfunction="GPIO9_A10_D10_COPI" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="20" name="unconnected-(U1-GPIO43_TX_D6-Pad7)">
+      <node ref="U1" pin="7" pinfunction="GPIO43_TX_D6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(U1-GPIO44_D7_RX-Pad14)">
+      <node ref="U1" pin="14" pinfunction="GPIO44_D7_RX" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>

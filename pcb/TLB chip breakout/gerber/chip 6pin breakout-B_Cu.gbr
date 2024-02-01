@@ -1,0 +1,43 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,7.0.9*%
+%TF.CreationDate,2024-01-31T17:42:47-08:00*%
+%TF.ProjectId,chip 6pin breakout,63686970-2036-4706-996e-20627265616b,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Copper,L2,Bot*%
+%TF.FilePolarity,Positive*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 7.0.9) date 2024-01-31 17:42:47*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,ComponentPad*%
+%ADD10O,1.700000X1.700000*%
+%TD*%
+%TA.AperFunction,ComponentPad*%
+%ADD11R,1.700000X1.700000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+%TO.P,J2,3,Pin_3*%
+%TO.N,/VDD*%
+X150160000Y-93082000D03*
+%TO.P,J2,2,Pin_2*%
+%TO.N,GND*%
+X150160000Y-90542000D03*
+D11*
+%TO.P,J2,1,Pin_1*%
+%TO.N,/SDA*%
+X150160000Y-88002000D03*
+%TD*%
+%TO.P,J1,1,Pin_1*%
+%TO.N,/SCL*%
+X140000000Y-88002000D03*
+D10*
+%TO.P,J1,2,Pin_2*%
+%TO.N,GND*%
+X140000000Y-90542000D03*
+%TO.P,J1,3,Pin_3*%
+X140000000Y-93082000D03*
+%TD*%
+M02*
