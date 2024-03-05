@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+  <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script> -->
+  <meta charset="utf-8" />
+
+</head>
+
+<body>
+
+  <button onclick="clearCanvas()">Clear Canvas</button>
+  <button onclick="captureScreenshot()">Capture Screenshot</button>
+  <p id="bleData" style="font-size: 24px;">Waiting for data...</p>
+  <div id="strokeGlyph" style="font-size: 24px;"></div>
+  <script>
+    let joystickData;
+    let pushJoystick;
+    let brushStroke;
+    let brushColor;
+    let colorpalette = ["#D64045", "#467599", "#1D3354", "#C57B57", "#000000", "#8DAB7F", "#CFEE9E", "#9DA9A0", "#654C4F", "#FCB97D"];
+
+    var graphics; //the drawing canvas
+    let cursorBuffer; // buffer for the cursor
+    let cursorPos; // current position of the cursor
+    let prevPos; // previous position of the cursor
+    let cursorSize = 20; // size of the cursor
+    let speed = 5; // movement speed of the cursor
+
+    function setup() {
+      createCanvas(1400, 400);
+      cursorPos = createVector(width / 2, height / 2); // initialize the cursor position
+      graphics = createGraphics(1400, 400); // create a buffer for the cursor
+      graphics.clear(); // clear the buffer
+    }
+
+    function draw() {
+      background(255); // Clear the main canvas
+      image(graphics, 0, 0); // Draw the buffer to the main canvas
+      
+      updateCursorWithJoystick(joystickData, pushJoystick);
+
+    }
+
+    function hexToRgb(hex) {
+      let r = 0, g = 0, b = 0;
+      // 3 digits
+      if (hex.length == 4) {
+          r = parseInt(hex[1] + hex[1], 16);
+          g = parseInt(hex[2] + hex[2], 16);
+          b = parseInt(hex[3] + hex[3], 16);
+      }
+      // 6 digits
+      else if (hex.length == 7) {
+          r = parseInt(hex[1] + hex[2], 16);
+          g = parseInt(hex[3] + hex[4], 16);
+          b = parseInt(hex[5] + hex[6], 16);
+      }
+      return [r, g, b];
+    }
+
+    // based on the joystick data, update the cursor position, draw the cursor and the line
+    function updateCursorWithJoystick(joystickData, pushJoystick) {
+      if (joystickData) {
+        let angle = joystickData;
+        let radian = radians(angle); 
+
+        let moveX = sin(radian) * speed;
+        let moveY = cos(radian) * speed;
+
+        // prevPos = cursorPos.copy();
+        cursorPos.x += moveX;
+        cursorPos.y -= moveY;
+
+        cursorPos.x = constrain(cursorPos.x, 0, width);
+        cursorPos.y = constrain(cursorPos.y, 0, height);
+
+        
+        // if pushJoystick is true, draw a line from the previous position to the current position
+        if (pushJoystick) {
+          console.log("pushJoystick");
+          graphics.noStroke();
+
+          let rgbColor = hexToRgb(colorpalette[brushColor - 1]);
+
+          graphics.fill(rgbColor[0], rgbColor[1], rgbColor[2]);
+          graphics.ellipse(cursorPos.x, cursorPos.y, (brushStroke + 1) * 2, (brushStroke + 1) * 2);
+        }
+      }
+
+      // draw the cursor
+      stroke(0, 0, 0); 
+      line(cursorPos.x - cursorSize, cursorPos.y, cursorPos.x + cursorSize, cursorPos.y);
+      line(cursorPos.x, cursorPos.y - cursorSize, cursorPos.x, cursorPos.y + cursorSize);
+
+    }
+
+    function clearCanvas() {
+      background(255); // Clear the main canvas
+      graphics.clear(); // clear the buffer
+    }
+
+    function captureScreenshot() {
+      saveCanvas(canvas, 'screenshot', 'png');
+    } 
+
+  </script>
+
+  <!-- get data from the backend -->
+  <!-- <script>
+    function updateData() {
+      fetch('/get_raw')
+        .then(response => response.json()) // Convert the response to JSON
+        .then(data => {
+          // Assuming data is an object with a structure like { joystick: { x: "value", y: "value", z: "value" }}
+          if (data.joystick) {
+            const joystickData = data.joystick;
+            document.getElementById('bleData').innerText = `X: ${joystickData.x}, Y: ${joystickData.y}, Z: ${joystickData.z}`;
+            if (joystickData.z == 0) {
+              clearCanvas();
+            }
+          } else {
+            document.getElementById('bleData').innerText = "No data";
+          }
+          // console.log(data);
+        })
+        .catch(error => console.error('Error:', error));
+    }
+    // setInterval(updateData, 100);
+  </script> -->
+
+  <script type="text/javascript">
+    function connect() {
+      var socket = io.connect('http://' + document.domain + ':' + location.port, {
+          reconnection: true,
+          reconnectionDelay: 1000,
+          reconnectionDelayMax: 5000,
+          reconnectionAttempts: Infinity
+      });
+
+      socket.on('connect', function() {
+          console.log('Websocket connected');
+      });
+
+      socket.on('disconnect', function() {
+          console.log('Websocket disconnected');
+          setTimeout(connect, 2000); // Try to reconnect every 2 seconds
+      });
+
+      socket.on('welcome', function(data) {
+          document.getElementById('bleData').innerHTML = data["message"];
+      });
+      // listen for bledata event
+      socket.on('bledata', function(data) {
+          console.log('Received BLE update: ', data);
+          document.getElementById('bleData').innerHTML = `
+              stroke: ${data["stroke"]}, 
+              color: ${data["color"]}, 
+              joystick: ${data["joystick"]}, 
+              draw: ${data["draw"]}, 
+              clear: ${data["clear"]}
+          `;
+          document.getElementById('strokeGlyph').innerHTML = `
+              Your current brush:
+              <div style="width: ${(brushStroke + 1) * 2}px; height: ${(brushStroke + 1) * 2}px; border-radius: 50%; background-color: ${colorpalette[data["color"]-1]}; display: inline-block; margin-left: 10px;"></div>
+          `;
+          joystickData = data["joystick"];
+          pushJoystick = data["draw"];
+          brushColor = data["color"];
+          brushStroke = data["stroke"];
+
+          //clear the canvas
+          if (data["clear"]) {
+            clearCanvas();
+          }
+      });
+      // listen for screenshot event
+      socket.on('screenshot', function(data) {
+        if(data.message == "capture") {
+          captureScreenshot();
+        }
+    });
+    }
+    // initial connection
+    connect();
+    
+  </script>
+
+</body>
+
+</html>

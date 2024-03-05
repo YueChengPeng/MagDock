@@ -4,6 +4,12 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Display Device")
+    (date "2024-03-05")
+    (rev "Yuecheng Peng")
+  )
+
   (lib_symbols
     (symbol "Connector_Generic:Conn_01x04" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 5.08 0)
